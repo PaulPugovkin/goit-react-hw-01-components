@@ -13,28 +13,28 @@ import TransactionsHistory from "./Components/Transactions-history/TransactionsH
 import transactionsData from "./Components/Transactions/transactions-data.json";
 
 function App() {
-	return (
-		<>
-			<Wrapper title={"profile"}>
-				<Profile
-					name={userData.name}
-					tag={userData.tag}
-					location={userData.location}
-					avatar={userData.avatar}
-					stats={userData.stats}
-				/>
-			</Wrapper>
-			<Wrapper title="statistics">
-				<StatisticList items={stasticsData} />
-			</Wrapper>
-			<Wrapper title="friends-list">
-				<FriendsList items={friendsData} />
-			</Wrapper>
-			<Wrapper title="transactions">
-				<TransactionsHistory items={transactionsData} />
-			</Wrapper>
-		</>
-	);
+  return (
+    <>
+      <Wrapper>
+        <Profile
+          name={userData.name}
+          tag={userData.tag}
+          location={userData.location}
+          avatar={userData.avatar}
+          stats={userData.stats}
+        />
+      </Wrapper>
+      <Wrapper>
+        <StatisticList items={stasticsData} />
+      </Wrapper>
+      <Wrapper>
+        <FriendsList items={friendsData} />
+      </Wrapper>
+      <Wrapper>
+        <TransactionsHistory items={transactionsData} />
+      </Wrapper>
+    </>
+  );
 }
 
 export default App;
