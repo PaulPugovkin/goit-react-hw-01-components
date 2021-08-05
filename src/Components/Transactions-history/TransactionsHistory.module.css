@@ -1,0 +1,43 @@
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  table-layout: fixed;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.th {
+  width: 30%;
+  padding: 10px 0;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--secondary-text-color);
+}
+
+table {
+  background-color: #fafafa;
+}

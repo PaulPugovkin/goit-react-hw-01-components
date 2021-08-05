@@ -1,16 +1,16 @@
-import Wrapper from "./Components/Wrapper/Wrapper.jsx";
+import Wrapper from "./Components/Wrapper";
 
-import Profile from "./Components/User/Profile.jsx";
-import userData from "./Components/User/user-data.json";
+import Profile from "./Components/Profile";
+import userData from "./Data/user-data.json";
 
-import StatisticList from "./Components/Statistic-list/StatisticList.jsx";
-import stasticsData from "./Components/Statistic/statistical-data.json";
+import StatisticList from "./Components/Statistic-list";
+import stasticsData from "./Data/statistical-data.json";
 
-import FriendsList from "./Components/Friends-list/FriendsList.jsx";
-import friendsData from "./Components/Friends/friends-data.json";
+import FriendsList from "./Components/Friends-list";
+import friendsData from "./Data/friends-data.json";
 
-import TransactionsHistory from "./Components/Transactions-history/TransactionsHistory.jsx";
-import transactionsData from "./Components/Transactions/transactions-data.json";
+import TransactionsHistory from "./Components/Transactions-history";
+import transactionsData from "./Data/transactions-data.json";
 
 function App() {
   return (

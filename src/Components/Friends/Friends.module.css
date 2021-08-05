@@ -10,10 +10,6 @@
   margin-bottom: 10px;
 }
 
-.status {
-  margin: 10px 0;
-}
-
 .avatar {
   margin-right: 10px;
 }
@@ -21,4 +17,22 @@
 .name {
   font-size: 20px;
   font-weight: 400;
+}
+
+.status {
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 100%;
+}
+
+.statusOnline {
+  composes: status;
+  background-color: green;
+}
+
+.statusOffline {
+  composes: status;
+  background-color: red;
 }
